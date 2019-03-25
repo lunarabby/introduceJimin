@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	 <script src="../jquery-3.3.1.js"></script>s
 	 <link rel="stylesheet" href="../dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="../dist/bootstrap-3.3.7-dist/css/bootstrap.css">
 	 <style type="text/css">
+
 	    .carousel{
 	    	height: 500px;
 	    	background: #000;
@@ -31,7 +33,20 @@
 	    #s,#k,#m .cen{
 	        margin:20px auto;
 	    }
-
+	    #content{
+	    	border:1px solid #00418f;
+	    	border-radius: 10px;
+	    	box-shadow: 5px 5px;
+	    	margin: 10px auto;
+	    }
+        #footer{
+        	height: 60px;
+        	background: black;
+        }
+        #footer h5{
+        	color: white;
+        	margin: 20px 30px;
+        }
 	 </style>
 </head>
 <body>
@@ -109,7 +124,7 @@
                 <div class="container">
                 <a class="navbar-brand">我爱小旻zqsg</a>
                    <ul class="nav navbar-nav">
-                   	<li class="active"><a href="##">认识小旻</a></li>
+                   	<li class="active" data-toggle="modal" data-target="#hh"><a href="##">认识小旻</a></li>
                    	<li class="dropdown">
                    	<a href="##" data-toggle="dropdown" class="dropdown-toggle">今年的大场面<span class="caret"></span></a>
                    	    <ul class="dropdown-menu">
@@ -186,13 +201,39 @@
             </div>
         </div>
      </div>
-     <div id="footer" class="container">
-        <div class="row">
-            <div class="col-md-11"></div>
-        </div>
-
+     <div id="footer">
+        <h5 class="pull-right">2019xk</h5>
      </div>
-	  <script src="../jquery-3.3.1.js"></script>
-	  <script src="../dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+  <div class="modal fade" id="hh">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- 弹出框头部 -->
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title">朴智旻</h4>
+		</div>
+
+			<!--  弹出框内容-->
+
+			<div class="modal-body">
+			小学就读于釜山会同小学，初中毕业于轮山中学，高中则以第一名的成绩考入了釜山艺术高中舞蹈专业，并成为该校舞蹈专业首席，后因演艺事业而转学到韩国艺术高中实用音乐专业
+			</div>
+
+			<!-- 底部 -->
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+  <script src="../jquery-3.3.1.js"></script>
+  <script src="../dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
