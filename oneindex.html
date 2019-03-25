@@ -4,13 +4,107 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	 <link rel="stylesheet" href="../dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="../dist/bootstrap-3.3.7-dist/css/bootstrap.css">
+	 <style type="text/css">
+	    .carousel{
+	    	height: 500px;
+	    	background: #000;
+	    }
+	    .carousel .item{
+	    	height: 500px;
+	    	background: #000;
+	    }
+	    .carousel img{
+	    	width: 100%;
+	    }
+	    #content .col-md-4{
+	    	margin-top:30px;
+	    	text-align: center;
+	    }
+	    #s,#k,#m{
+	    	margin: 10px auto;
+	    }
+	    #s,#k,#m p{
+	    	color: #7a92fc;
+	    	text-align: center;
+	    }
+	    #s,#k,#m .cen{
+	        margin:20px auto;
+	    }
+
+	 </style>
 </head>
 <body>
-     <div id="header" class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center" style="background: red;height:300px"></div>
-        </div>
-     </div>
+     
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <div id="header" class="container">
+
+		  <ol class="carousel-indicators">
+
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+
+		  </ol>
+
+
+		  <div class="carousel-inner" role="listbox">
+
+		    <div class="item active">
+
+		      <img src="images/IMG_0514.JPG" alt="...">
+
+		      <div class="carousel-caption">
+
+		       <p >朴智旻的Popping（舞蹈风格）独一无二的理由是融入了柔和的成分，他的舞蹈达到了男性美和女性美可以协调一致的境界。做折叠关节的舞蹈则表现出了无骨般的柔韧，</p>
+
+		      </div>
+
+		    </div>
+
+		    <div class="item">
+
+		      <img src="images/IMG_0690.JPG" alt="...">
+
+		      <div class="carousel-caption">
+
+		        <p> 他在舞台上散发着强烈的魅力，用性感的眼神和令人晕眩的舞台表演抓住了粉丝的心。素颜的朴智旻则有着可爱的面貌，乖顺的眼神和无暇的皮肤让人印象深刻，仿佛男友一般 </p>
+
+		      </div>
+
+		    </div>
+
+            <div class="item">
+
+		      <img src="images/IMG_0666.JPG" alt="...">
+
+		      <div class="carousel-caption">
+
+		        <p>他的舞蹈最为标准，每根手指都能感受到音乐并且调节力度强弱，乍一看仿佛是“舞蹈之神”一般。虽然他有天才般的才能，但也是一位执着的努力派，爱开玩笑的他不知不觉已经成长为青年，并且散发着自己独特的魅力</p>
+
+		      </div>
+
+		    </div>
+            
+		  </div>
+
+
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+  </a>
+
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+  </a>
+</div>
+</div>
+
      <div id="nav" class="nav navbar-inverse">
                 <div class="container">
                 <a class="navbar-brand">我爱小旻zqsg</a>
@@ -29,25 +123,68 @@
                    </ul>
                 </div>
      </div>
+    <div class="container">
+    <ul class="nav nav-tabs" role="tablist" id="myTab"> 
+    <li class="active"><a href="#m" role="tab" data-toggle="tab">人鱼旻</a></li> 
+    <li><a href="#s" role="tab" data-toggle="tab">斯莱特林王子</a></li> 
+    <li><a href="#k" role="tab" data-toggle="tab">kittygang</a></li> 
+    </ul> 
+    </div> 
+    <div class="container">
+    <div class="tab-content"> 
+    <div class="tab-pane active" id="m"> 
+    <div class="container cen">
+    <div class="row">
+    <div class="col-md-5 col-md-offset-2">
+    <p><strong>他</strong>的舞蹈最为标准，每根手指都能感受到音乐并且调节力度强弱，乍一看仿佛是“舞蹈之神”一般。虽然他有天才般的才能，但也是一位执着的努力派，爱开玩笑的他不知不觉已经成长为青年，并且散发着自己独特的魅力</p> 
+    </div>
+    <div class="col-md-3">
+    <img src="images/1.jpg" alt="人鱼旻" class="img-rounded">
+    </div>
+    </div>
+    </div>
+    </div> 
+    <div class="tab-pane" id="s"> 
+    <div class="container cen">
+    <div class="row">
+    <div class="col-md-3 col-md-offset-1">
+    <img src="images/2.jpg" alt="斯莱特林王子" class="img-rounded">
+    </div>
+    <div class="col-md-5">
+    <p><strong>朴智旻</strong>以温暖的外貌受到大众的瞩目，尤其是他的素颜与舞台上表演时截然相反的样子加倍增添了他的魅力，他在舞台上散发着强烈的魅力，用性感的眼神和令人晕眩的舞台表演抓住了粉丝的心。</p> 
+    </div>
+    </div>
+    </div>
+    </div> 
+    <div class="tab-pane" id="k"> 
+    <div class="container cen">
+    <div class="row">
+    <div class="col-md-5 col-md-offset-2">
+    <p><strong>朴智旻</strong>小学就读于釜山会同小学，初中毕业于轮山中学，高中则以第一名的成绩考入了釜山艺术高中舞蹈专业，并成为该校舞蹈专业首席，后因演艺事业而转学到韩国艺术高中实用音乐专业</p> 
+    </div>
+    <div class="col-md-3">
+    <img src="images/3.jpg" alt="kittygang" class="img-rounded">
+    </div>
+    </div>
+    </div>
+    </div> 
+    </div>
+    </div>
      <div id="content" class="container">
         <div class="row">
             <div class="col-md-4">
-            <div class="panel panel-info">
-                <div class="panel-body"><a href="##" class="thumnail"><img src="images/1.jpg" alt="人鱼旻"></a>
+                <a href="##" class="thumnail"><img src="images/1.jpg" alt="人鱼旻" class="img-rounded"></a>
                 <p>他是人鱼国最美的人鱼</p>
-                </div>
-                </div>
             </div>
             <div class="col-md-4">
-               <a href="##" class="thumnail"><img src="images/2.jpg" alt="斯莱特林王子"></a>
+               <a href="##" class="thumnail"><img src="images/2.jpg" alt="斯莱特林王子" class="img-rounded"></a>
                <p>又A又野又奶的斯莱特林小王子</p>
             </div>
             <div class="col-md-4">
-               <a href="##" class="thumnail"><img src="images/3.jpg" alt="kittygang"></a>
+               <a href="##" class="thumnail"><img src="images/3.jpg" alt="kittygang" class="img-rounded"></a>
                <p>他是这条街上最野的崽！！</p>
             </div>
         </div>
-
      </div>
      <div id="footer" class="container">
         <div class="row">
