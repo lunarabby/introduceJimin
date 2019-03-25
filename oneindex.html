@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	 <script src="../jquery-3.3.1.js"></script>s
+	 <script src="../jquery-3.3.1.js"></script>
 	 <link rel="stylesheet" href="../dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="../dist/bootstrap-3.3.7-dist/css/bootstrap.css">
 	 <style type="text/css">
@@ -124,14 +124,13 @@
                 <div class="container">
                 <a class="navbar-brand">我爱小旻zqsg</a>
                    <ul class="nav navbar-nav">
-                   	<li class="active" data-toggle="modal" data-target="#hh"><a href="##">认识小旻</a></li>
+                   	<li class="active" data-toggle="modal" data-target="#hh"  data-keyborad="false"><a href="##">认识小旻</a></li>
                    	<li class="dropdown">
                    	<a href="##" data-toggle="dropdown" class="dropdown-toggle">今年的大场面<span class="caret"></span></a>
                    	    <ul class="dropdown-menu">
-                   	    	<li><a href="##">人鱼旻</a></li>
-                   	    	<li><a href="##">kittygang</a></li>
-                   	    	<li><a href="##">斯莱特林王子</a></li>
-                   	    	<li><a href="##">狐仙旻</a></li>
+                   	    	<li><a href="#fd">人鱼旻</a></li>
+                   	    	<li><a href="#sn">kittygang</a></li>
+                   	    	<li><a href="#tuan">斯莱特林王子</a></li>
                    	    </ul>
                    	</li>
                    	<li><a href="##">填坑</a></li>
@@ -185,17 +184,19 @@
     </div> 
     </div>
     </div>
+   
+    <div data-spy="scroll" data-target="#nav">
      <div id="content" class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4" id="fd">
                 <a href="##" class="thumnail"><img src="images/1.jpg" alt="人鱼旻" class="img-rounded"></a>
-                <p>他是人鱼国最美的人鱼</p>
+                <p><button type="button" class="btn btn-primary" id="mer" data-toggle="popover" data-container="body" title="人鱼旻" data-trigger="hover" data-content='他是世界上最美的人鱼王子'>人鱼</button></p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" id="sn">
                <a href="##" class="thumnail"><img src="images/2.jpg" alt="斯莱特林王子" class="img-rounded"></a>
                <p>又A又野又奶的斯莱特林小王子</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" id="tuan">
                <a href="##" class="thumnail"><img src="images/3.jpg" alt="kittygang" class="img-rounded"></a>
                <p>他是这条街上最野的崽！！</p>
             </div>
@@ -204,9 +205,9 @@
      <div id="footer">
         <h5 class="pull-right">2019xk</h5>
      </div>
-
-  <div class="modal fade" id="hh">
-	<div class="modal-dialog">
+    </div>
+  <div class="modal fade" id="hh" role="dialog" data-backdrop="true" data-keyboard="true">
+	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
 			<!-- 弹出框头部 -->
 			<div class="modal-header">
@@ -232,8 +233,11 @@
 		</div>
 	</div>
 </div>
-
   <script src="../jquery-3.3.1.js"></script>
   <script src="../dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(".army").popover();
+  $("#mer").popover();
+  </script>
 </body>
 </html>
